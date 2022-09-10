@@ -1,0 +1,8 @@
+.serverless/
+node_modules/
+.idea/
+__pycache__/
+user_billing_details/
+.vscode/
+.DS_Store
+package-lock.json

@@ -1,0 +1,76 @@
+import datetime
+
+
+CURRENT_DATE = datetime.datetime.today()
+
+REPORT_TYPE_DAILY = '1'
+REPORT_TYPE_WEEKLY = '2'
+REPORT_TYPE_MONTHLY = '3'
+
+REPORT_SCHEDULE = {
+    REPORT_TYPE_DAILY: 'Daily',
+    REPORT_TYPE_WEEKLY: 'Weekly',
+    REPORT_TYPE_MONTHLY: 'Monthly'
+}
+
+REPORT_SCHEDULE_ALTERNATIVE = {
+    REPORT_TYPE_DAILY: 'Day',
+    REPORT_TYPE_WEEKLY: 'Week',
+    REPORT_TYPE_MONTHLY: 'Month'
+}
+
+STATUS_ACTIVE = 1
+STATUS_INACTIVE = 0
+
+NO_SUCH_KEY_ERROR = 'NoSuchKey'
+DEFAULT_ROUND_VALUE = 2
+INIT_AMOUNT = 0.00
+DATE_FORMAT_DEFAULT = '%Y-%m-%d'
+
+HTTP_STATUS_CODE_200 = 200
+HTTP_STATUS_CODE_404 = 404
+HTTP_STATUS_CODE_401 = 401
+
+'''Modal constant values'''
+MODAL_HEADER = 'Kmart Cost Notifier'
+
+MODAL_TYPE_PLAIN_TEXT = "plain_text"
+MODAL_TYPE_INPUT = "input"
+MODAL_TYPE_SECTION = "section"
+MODAL_TYPE_HEADER = "header"
+MODAL_TYPE_ACTIONS = "actions"
+MODAL_TYPE_DIVIDER = "divider"
+MODAL_TYPE_CONTEXT = "context"
+MODAL_TYPE_MRK_DWN = "mrkdwn"  # Used to create visual highlights in messages
+
+MODAL_INPUT_TYPE_EXTERNAL_SELECT = "external_select"
+MODAL_INPUT_TYPE_CONVERSATION_SELECT = "conversations_select"
+MODAL_INPUT_TYPE_PLAIN_TEXT = "plain_text_input"
+MODAL_INPUT_TYPE_RADIO_BUTTON = "radio_buttons"
+MODAL_INPUT_TYPE_CHECKBOX = "checkboxes"
+MODAL_INPUT_TYPE_BUTTON = "button"
+
+MODAL_VALUE_ALERT_NAME = "alert_name"
+MODAL_VALUE_PROJECT_TAG = "project_tag"
+MODAL_VALUE_BUDGET_LIMIT = "budget_limit"
+MODAL_VALUE_BUDGET_THRESHOLD = "budget_threshold"
+MODAL_VALUE_REPORT_SCHEDULE = "report_schedule"
+MODAL_VALUE_CHANNEL_ID = "channel_id"
+MODAL_VALUE_ALERT_LIST = "alert_list"
+MODAL_VALUE_SEND_NOW = "send_now"
+MODAL_VALUE_PROJECT_FAST = "project_fast"
+MODAL_VALUE_PROJECT_SHARED = "project_shared"
+MODAL_VALUE_UPDATE_PROJECT_SHARED = "update_project_shared"
+MODAL_VALUE_INSTANT_ALERT = "instant_alert"
+MODAL_VALUE_CREATE_ALERT = "create_alert"
+MODAL_VALUE_UPDATE_ALERT = "update_alert"
+MODAL_VALUE_DELETE_ALERT = "delete_alert"
+MODAL_VALUE_FAST_ACCOUNT_NAME = "fast_account_name"
+
+CLIENT_EMOJI_TREND_UP = ":arrow_up:"
+CLIENT_EMOJI_TREND_DOWN = ":arrow_down:"
+CLIENT_EMOJI_IF_BREACHED = ":exclamation:"
+CLIENT_EMOJI_IF_NOT_BREACHED = ":white_check_mark:"
+CLIENT_EMOJI_PRIVATE_CHANNEL = ':lock:'
+CLIENT_EMOJI_PUBLIC_CHANNEL = ':hash:'
+CLIENT_EMOJI_USER_CHANNEL = ':bust_in_silhouette:'

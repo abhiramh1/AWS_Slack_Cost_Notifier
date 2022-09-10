@@ -1,0 +1,23 @@
+# configurations needed to generate flask application build for lambda
+
+service: billing-alert-api
+
+provider:
+  name: aws
+  runtime: python3.8
+
+functions:
+  app:
+    handler: wsgi_handler.handler
+
+custom:
+  wsgi:
+    app: app.app
+    pythonBin: python3
+    packRequirements: false
+  pythonRequirements:
+    dockerizePip: false
+
+plugins:
+  - serverless-wsgi
+  - serverless-python-requirements
