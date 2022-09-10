@@ -26,11 +26,12 @@ npm install serverless-python-requirements
 Follow the below mentioned steps for setting up the application in local environement.
 
 ```bash
-cd km-uplift-aws-billing-alert
+git clone -b main https://github.com/abhiramh1/AWS_Slack_Cost_Notifier.git
+cd AWS_Slack_Cost_Notifier
 
 # setup python virtual environment and install python packages
-python3 -m venv km-uplift-aws-billing-alert-venv
-source km-uplift-aws-billing-alert-venv/bin/activate
+python3 -m venv AWS_Slack_Cost_Notifier-venv
+source AWS_Slack_Cost_Notifier-venv/bin/activate
 pip3 install -r requirements.txt
 
 # setup environment variables
